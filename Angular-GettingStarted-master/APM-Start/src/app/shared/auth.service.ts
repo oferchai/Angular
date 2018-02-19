@@ -85,6 +85,8 @@ export class AuthService {
         return this._cookieService.get("serverAuthCode");        
     }
 
+   //test comment
+    
     getExpiration(): string {
         if (this.activity)
             return this.activity.ExpireOn.toDateString();
