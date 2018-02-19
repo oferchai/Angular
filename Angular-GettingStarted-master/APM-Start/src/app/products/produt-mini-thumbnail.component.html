@@ -1,0 +1,19 @@
+
+<div class='panel panel-primary myPanel' >
+    
+    <div   class="panel-heading" (click)="LinkClicked(product.productId)" >
+         <h4> {{product.productId}} &nbsp;-&nbsp; {{product.productName}}  </h4>
+    </div>
+
+  <div class="align-r">                                              
+      <img  *ngIf='showImage'
+      [src]='product.imageUrl'
+      [title] = 'product.productName' 
+      [style.width.px] = 'imageWidth'
+      [style.margin.px] = 'imageMargin'
+      >                                    
+  </div>
+
+  
+ 
+</div>

@@ -1,0 +1,28 @@
+<div class='col col-md-12 panel allpanels'>
+
+    <!-- <div class='panel-heading'>
+        {{pageTitle}}
+    </div> -->
+
+
+
+    <div class="row upperpanel" >
+        <div class="col col-md-4 leftpanel">
+
+            <PRODUCT-LIST [useThumbnail]="useThumbnail" #productdList></PRODUCT-LIST>
+        </div>
+
+        <div class="col-md-8 rightpanel" *ngIf="productdList.selectedProduct" >
+            <PRODUCT-EDIT *ngIf='productdList.selectedProduct' (LogEvent)="onConsoleEvent($event,consoleLog)" [product]="productdList.selectedProduct"></PRODUCT-EDIT>
+        </div>
+    </div>
+
+
+    <div class="row buttompanel" >
+        <div class=" col col-md-12 ">
+            <CONSOLE-LOG #consoleLog></CONSOLE-LOG>
+        </div>
+
+    </div>
+
+</div>

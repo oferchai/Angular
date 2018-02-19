@@ -1,0 +1,16 @@
+.myPanel {
+    margin-left: 30px;
+    width: 100%;
+}
+.align-r {
+    float: right;
+}
+.bold
+{
+    font-weight: bold;
+}
+
+.panel-heading { 
+    cursor: pointer; 
+    color:white;
+}

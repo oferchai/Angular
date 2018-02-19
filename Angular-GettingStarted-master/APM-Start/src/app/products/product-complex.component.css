@@ -1,0 +1,30 @@
+.allpanels
+{
+    display:block;
+    background-color:rgb(239, 246, 247);
+    height:900px;
+    overflow:unset;
+}
+.leftpanel  
+{
+    height:100%;    
+    overflow:scroll;
+}
+
+.rightpanel  
+{
+    height:100%;
+    overflow: hidden;
+}    
+
+.buttompanel  
+{
+    height: 20%;    
+    overflow-y: hidden;
+}    
+
+.upperpanel  
+{        
+    height: 80%;    
+    overflow: hidden;
+}    

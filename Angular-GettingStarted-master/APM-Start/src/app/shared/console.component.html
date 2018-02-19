@@ -1,0 +1,7 @@
+<div class='consoleColors'>
+    <div class="row" style="overflow-y: scroll">
+        <div *ngIf="lines">
+            <div style="margin-left:15px"  *ngFor='let line of lines.reverse()' class="row">{{line}}</div>
+        </div>
+    </div>
+</div>

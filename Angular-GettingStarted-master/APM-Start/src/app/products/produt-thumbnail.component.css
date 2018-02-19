@@ -1,0 +1,16 @@
+div {
+    /* background-color: aqua; */
+    margin: 5px;
+}
+.align-r {
+    float: right;
+}
+.bold
+{
+    font-weight: bold;
+}
+
+.panel-heading { 
+    cursor: pointer; 
+    color:white;
+}

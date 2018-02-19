@@ -1,0 +1,27 @@
+
+<div class='panel panel-primary'>
+    
+    <div  class='panel-heading' (click)="LinkClicked(product.productId)" >
+          {{product.productId}} &nbsp;ABC-&nbsp; {{product.productName}}        
+    </div>
+
+  <div class="align-r">                                              
+      <img  *ngIf='showImage'
+      [src]='product.imageUrl'
+      [title] = 'product.productName' 
+      [style.width.px] = 'imageWidth'
+      [style.margin.px] = 'imageMargin'
+      >                                    
+  </div>
+
+  
+  <div>{{ product.productCode | lowercase | convertToSpaces:'-'  }}</div>
+
+  <div [ngClass]="{bold:product.releaseDate.indexOf('2018')!==-1}"> {{ product.releaseDate | date}} </div>
+
+  <div>{{ product.price | currency:'USD':true:'1.2-2'}}</div>
+
+  <div><pm-star [rating] ='product.starRating'
+    (ratingClicked) = 'onNotify($event)' ></pm-star>
+  </div>
+</div>
